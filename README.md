@@ -175,7 +175,7 @@ Publish Over FTP
 
 ## 추가 기능
 
-###깃헙 에서 푸시 하면, 자동 빌드 하기
+#### 깃헙 에서 푸시 하면, 자동 빌드 하기
 1. 빌드유발에서 'Build when a change is pushed to GitHub' 체크박스 선택
 2. Github 프로젝트에서 'Settings' 클릭
 3. 'Webhooks & Services' 탭 클릭
@@ -185,7 +185,7 @@ Publish Over FTP
 
 ![jenkins_23](image/jenkins_23.png) 
 
-### FTP 서버로 war 파일 전송하기
+#### FTP 서버로 war 파일 전송하기
  1. 젠킨스 관리에서 플러그인(Publish Over FTP) 및 시스템 설정 후
  2. 등록한 FTP 서버 선택
  3. war 파일의 경로 설정
@@ -194,7 +194,7 @@ Publish Over FTP
  ![jenkins_24](image/jenkins_24.png)
  		
 
-### Tomcat 서버에 war 파일 띄우기
+#### Tomcat 서버에 war 파일 띄우기
 ```
 <tomcat-users>
  	<role rolename="manager-script"/>
@@ -211,7 +211,7 @@ Publish Over FTP
  
  ![jenkins_25](image/jenkins_25.png)
 
-### 테스트 리포트 설정하기
+#### 테스트 리포트 설정하기
 
  	```
  	<parent>
