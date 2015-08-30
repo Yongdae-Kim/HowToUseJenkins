@@ -51,6 +51,7 @@
 
 ## 젠킨스(Jenkins) 시작/종료
  - 설치 후 <http://127.0.0.1:8080/> 자동실행됨
+
 ![jenkins_1](image/jenkins_1.png)
  - 시작 명령어
 > launchctl load homebrew.mxcl.jenkins.plist 
