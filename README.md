@@ -88,14 +88,14 @@ Groovy
 ```
  - 그래들 플러그인
 
-````
+```
 Gradle plugin
-```` 
+``` 
  - 그레일즈 플로그인
  
-````
+```
 Grails plugin
-````
+```
 
  - 배포 관련 플러그인
  
@@ -167,9 +167,9 @@ Publish Over FTP
 ---
 
 ## 프로젝트 빌드
- - #### 빌드하기 : 'Build Now' 를 클릭
+ - 빌드하기 : 'Build Now' 를 클릭
 ![jenkins_19](image/jenkins_19.png)
- - #### 빌드결과
+ - 빌드결과
 ![jenkins_20](image/jenkins_20.png)
 
 ---
