@@ -166,9 +166,9 @@ Publish Over FTP
 ---
 
 ## 프로젝트 빌드
- - #### 빌드하기 : 'Build Now' 를 클릭
+ - 빌드하기 : 'Build Now' 를 클릭
 ![jenkins_19](image/jenkins_19.png)
- - #### 빌드결과
+ - 빌드결과
 ![jenkins_20](image/jenkins_20.png)
 
 ---
@@ -182,7 +182,6 @@ Publish Over FTP
 4. Add Service 에서 'Jenkins (GitHub plugin)' 클릭
 5. ***Jenkins hook url*** 을 설정 ***(127.0.0.1:8080 또는 localhost:8080 은 안됨)***
 6. 빌드
-
 ![jenkins_23](image/jenkins_23.png) 
 
 #### FTP 서버로 war 파일 전송하기
@@ -190,7 +189,6 @@ Publish Over FTP
  2. 등록한 FTP 서버 선택
  3. war 파일의 경로 설정
  4. 빌드
- 
  ![jenkins_24](image/jenkins_24.png)
  		
 
@@ -208,7 +206,6 @@ Publish Over FTP
  4. tomcat-users.xml 에 등록한 username, password 입력 후
  5. ***Tomcat URL 설정***
  6. 빌드
- 
  ![jenkins_25](image/jenkins_25.png)
 
 #### 테스트 리포트 설정하기
