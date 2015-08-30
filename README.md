@@ -52,8 +52,7 @@
 ## 젠킨스(Jenkins) 시작/종료
 
  - ### 설치 후 <http://127.0.0.1:8080/> 자동실행됨
-
-![jenkins_1](image/jenkins_1.png)
+ ![jenkins_1](image/jenkins_1.png)
  - ### 시작 명령어
 > launchctl load homebrew.mxcl.jenkins.plist 
 >
@@ -88,14 +87,14 @@ Groovy
 ```
  - 그래들 플러그인
 
-```
+````
 Gradle plugin
-``` 
+```` 
  - 그레일즈 플로그인
  
-```
+````
 Grails plugin
-```
+````
 
  - 배포 관련 플러그인
  
@@ -167,9 +166,9 @@ Publish Over FTP
 ---
 
 ## 프로젝트 빌드
- - 빌드하기 : 'Build Now' 를 클릭
+ - #### 빌드하기 : 'Build Now' 를 클릭
 ![jenkins_19](image/jenkins_19.png)
- - 빌드결과
+ - #### 빌드결과
 ![jenkins_20](image/jenkins_20.png)
 
 ---
@@ -191,6 +190,7 @@ Publish Over FTP
  2. 등록한 FTP 서버 선택
  3. war 파일의 경로 설정
  4. 빌드
+ 
  ![jenkins_24](image/jenkins_24.png)
  		
 
@@ -208,27 +208,28 @@ Publish Over FTP
  4. tomcat-users.xml 에 등록한 username, password 입력 후
  5. ***Tomcat URL 설정***
  6. 빌드
+ 
  ![jenkins_25](image/jenkins_25.png)
 
 ### 테스트 리포트 설정하기
 
-```
-<parent>
-	<groupId>org.jenkins-ci.plugins</groupId>
-	<artifactId>plugin</artifactId>
-	<version>1.542</version>
-</parent>
-<repositories>
-	<repository>
-		<id>jenkins-releases</id>
-		<url>http://repo.jenkins-ci.org/releases</url>
-	</repository>
-	<repository>
-		<id>repo.jenkins-ci.org</id>
-		<url>http://repo.jenkins-ci.org/public</url>
-	</repository>
-</repositories>
-```
+ 	```
+ 	<parent>
+		<groupId>org.jenkins-ci.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>1.542</version>
+	</parent>
+	<repositories>
+		<repository>
+			<id>jenkins-releases</id>
+			<url>http://repo.jenkins-ci.org/releases</url>
+		</repository>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public</url>
+		</repository>
+	</repositories>
+	```
 	
 1. 프로젝트 pom.xml 위의 내용을 추가
 2. 테스트케이스 작성 후
@@ -236,3 +237,27 @@ Publish Over FTP
 
 ![jenkins_26](image/jenkins_26.png)
 ![jenkins_27](image/jenkins_27.png)
+
+---
+
+## 참고자료
+
+ - 지속적인 통합 위키백과
+ 
+	<http://www.slideshare.net/agebreak/140315-cihttp://gold9ine.tistory.com/8>
+
+ - 퀄리티 컨트롤 위키백과
+ 
+	<https://en.wikipedia.org/wiki/Quality_control>
+
+ - 관련 블로그
+ 
+	 - <https://www.davidlab.net/ko/tech/how-to-build-android-apps-with-jenkins/>
+	 - <http://stackoverflow.com/questions/30576881/jenkins-build-when-a-change-is-pushed-to-github-option-is-not-working>
+	 - <https://mkyojung.wordpress.com/2014/06/26/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-%EC%9E%90%EB%B0%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-gradle-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B3%A0-jenkins-%EC%84%A4%EC%A0%95/>
+	 - <http://stackoverflow.com/questions/21655838/jenkins-service-start-error-on-red-hat-linux>
+	 - <http://blog.iotinfra.net/?p=363>
+	 - <http://umsh86.tistory.com/entry/jenkins-%EC%84%A4%EC%B9%98-%EB%B0%8F-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95-2>
+	 - <https://devblood.wordpress.com/2013/10/08/jenkins-buid-%EB%B0%8F-deploy-%EC%84%A4%EC%A0%95/>
+	
+---
