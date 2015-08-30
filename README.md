@@ -212,24 +212,23 @@ Publish Over FTP
  ![jenkins_25](image/jenkins_25.png)
 
 #### 테스트 리포트 설정하기
-
- 	```
- 	<parent>
-		<groupId>org.jenkins-ci.plugins</groupId>
-		<artifactId>plugin</artifactId>
-		<version>1.542</version>
-	</parent>
-	<repositories>
-		<repository>
-			<id>jenkins-releases</id>
-			<url>http://repo.jenkins-ci.org/releases</url>
-		</repository>
-		<repository>
-			<id>repo.jenkins-ci.org</id>
-			<url>http://repo.jenkins-ci.org/public</url>
-		</repository>
-	</repositories>
-	```
+ ```
+ <parent>
+	<groupId>org.jenkins-ci.plugins</groupId>
+	<artifactId>plugin</artifactId>
+	<version>1.542</version>
+</parent>
+<repositories>
+	<repository>
+		<id>jenkins-releases</id>
+		<url>http://repo.jenkins-ci.org/releases</url>
+	</repository>
+	<repository>
+		<id>repo.jenkins-ci.org</id>
+		<url>http://repo.jenkins-ci.org/public</url>
+	</repository>
+</repositories>
+```
 	
 1. 프로젝트 pom.xml 위의 내용을 추가
 2. 테스트케이스 작성 후
