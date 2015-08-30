@@ -52,7 +52,8 @@
 ## 젠킨스(Jenkins) 시작/종료
 
  - ### 설치 후 <http://127.0.0.1:8080/> 자동실행됨
- ![jenkins_1](image/jenkins_1.png)
+
+![jenkins_1](image/jenkins_1.png)
  - ### 시작 명령어
 > launchctl load homebrew.mxcl.jenkins.plist 
 >
@@ -213,23 +214,23 @@ Publish Over FTP
 
 ### 테스트 리포트 설정하기
 
- 	```
- 	<parent>
-		<groupId>org.jenkins-ci.plugins</groupId>
-		<artifactId>plugin</artifactId>
-		<version>1.542</version>
-	</parent>
-	<repositories>
-		<repository>
-			<id>jenkins-releases</id>
-			<url>http://repo.jenkins-ci.org/releases</url>
-		</repository>
-		<repository>
-			<id>repo.jenkins-ci.org</id>
-			<url>http://repo.jenkins-ci.org/public</url>
-		</repository>
-	</repositories>
-	```
+```
+<parent>
+	<groupId>org.jenkins-ci.plugins</groupId>
+	<artifactId>plugin</artifactId>
+	<version>1.542</version>
+</parent>
+<repositories>
+	<repository>
+		<id>jenkins-releases</id>
+		<url>http://repo.jenkins-ci.org/releases</url>
+	</repository>
+	<repository>
+		<id>repo.jenkins-ci.org</id>
+		<url>http://repo.jenkins-ci.org/public</url>
+	</repository>
+</repositories>
+```
 	
 1. 프로젝트 pom.xml 위의 내용을 추가
 2. 테스트케이스 작성 후
