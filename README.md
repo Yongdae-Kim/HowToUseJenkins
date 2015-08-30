@@ -76,8 +76,8 @@
  - 깃헙 관련 플러그인
 
 ```
-git plugin
-github plugin
+Git plugin
+Github plugin
 ```
 
  - 그루비 플러그인
@@ -167,8 +167,11 @@ Publish Over FTP
 
 ## 프로젝트 빌드
  - 빌드하기 : 'Build Now' 를 클릭
+
 ![jenkins_19](image/jenkins_19.png)
+
  - 빌드결과
+
 ![jenkins_20](image/jenkins_20.png)
 
 ---
