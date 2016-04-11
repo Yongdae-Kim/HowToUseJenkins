@@ -37,10 +37,10 @@
 
 ## 젠킨스(Jenkins) 설치
 
- - ### homebrew 를 이용한 스퀴드 설치
+ - ### homebrew 를 이용한 젠킨스 설치
 > brew install jenkins 
 
- - ### yum 을 이용한 스퀴드 설치
+ - ### yum 을 이용한 젠킨스 설치
 > wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
 > 
 > rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
